@@ -4,89 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Sidney Clark Ordonia</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="About Sidney Clark Ordonia, a BYU-Hawaii Information Technology student focused on cloud, DevOps, systems administration, and IT service improvement.">
+    <title>About | Sidney Clark Ordonia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;family=Outfit:wght@500;700;800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-page="about">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a class="brand" href="index.html"><span class="brand-mark">SO</span><span class="brand-text"><span>Sidney Ordonia</span><span>IT Portfolio</span></span></a>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html" data-page="home">Home</a></li>
+                <li><a href="about.html" data-page="about">About</a></li>
+                <li><a href="experience.html" data-page="experience">Experience</a></li>
+                <li><a href="projects.html" data-page="projects">Projects</a></li>
+                <li><a href="skills.html" data-page="skills">Skills</a></li>
+                <li><a href="contact.html" data-page="contact">Contact</a></li>
+                <li><a class="nav-resume" href="assets/Sidney_Ordonia_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="experience.html">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <main>
+        <section class="page-hero reveal">
+            <p class="eyebrow">About Sidney</p>
+            <h1>A technology student with a service mindset and a systems point of view.</h1>
+            <p class="lead">I am an Information Technology major at Brigham Young University-Hawaii with minors in Supply Chain Operations and Music. My background blends campus IT operations, project coordination, technical support, and a strong interest in cloud infrastructure.</p>
+        </section>
 
-    <div class="card">
+        <section class="section compact">
+            <div class="grid two">
+                <article class="glass-panel feature-card reveal">
+                    <h2>Professional Introduction</h2>
+                    <p>I enjoy work where technology, people, and process meet. In campus IT, I have supported users, improved service workflows, documented systems, and helped teams make better decisions with clearer information.</p>
+                    <p>My interests include cloud computing, systems administration, automation, DevOps, and the reliability practices behind strong technical operations. I am especially motivated by roles where I can keep learning while making systems easier to support and scale.</p>
+                </article>
 
-        <h1 class="page-title">About Me</h1>
+                <aside class="callout reveal">
+                    <p><strong>Career Goal</strong></p>
+                    <h2>My goal is to become a DevOps Engineer or Solutions Architect, building scalable, reliable, and secure technology solutions.</h2>
+                </aside>
+            </div>
+        </section>
 
-        <div class="about-highlight">
-            <p>
-                Information Technology student focused on software development,
-                cloud technologies, and DevOps practices, actively seeking
-                opportunities to gain hands-on industry experience.
-            </p>
-        </div>
+        <section class="section">
+            <div class="section-heading reveal">
+                <div>
+                    <p class="eyebrow">Education & Direction</p>
+                    <h2>Built on technical foundations and broad communication skills.</h2>
+                </div>
+                <p>Supply chain coursework strengthens my process thinking, while music builds discipline, collaboration, and communication. Together, those experiences help me approach IT as both a technical and human system.</p>
+            </div>
 
-        <div class="about-content">
+            <div class="grid three">
+                <article class="feature-card reveal">
+                    <span class="icon">BS</span>
+                    <h3>Information Technology</h3>
+                    <p>BYU-Hawaii student focused on IT support, cloud concepts, systems, networking, and software foundations.</p>
+                    <ul class="tag-list">
+                        <li>GPA 3.91</li>
+                        <li>Systems thinking</li>
+                    </ul>
+                </article>
+                <article class="feature-card reveal">
+                    <span class="icon">SC</span>
+                    <h3>Supply Chain Operations Minor</h3>
+                    <p>Process improvement, operations awareness, stakeholder communication, and practical business context.</p>
+                    <ul class="tag-list">
+                        <li>Operations</li>
+                        <li>Process improvement</li>
+                    </ul>
+                </article>
+                <article class="feature-card reveal">
+                    <span class="icon">MU</span>
+                    <h3>Music Minor</h3>
+                    <p>Collaboration, performance discipline, attention to detail, and communication under pressure.</p>
+                    <ul class="tag-list">
+                        <li>Teamwork</li>
+                        <li>Discipline</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
 
-            <p>
-                I am currently pursuing a Bachelor of Science in Information Technology
-                at Brigham Young University–Hawaii with a cumulative GPA of 3.91.
-                Alongside my studies, I have gained practical experience supporting
-                enterprise technology environments through internships and campus IT roles.
-            </p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Sidney Clark Ordonia</p>
+        <p><a href="contact.html">Available for internships and early-career IT opportunities</a></p>
+    </footer>
 
-            <p>
-                My work includes managing large-scale computer deployments using
-                Microsoft Intune, configuring IT Service Management platforms,
-                maintaining inventory systems, and supporting end users through
-                ticketing operations and technical troubleshooting.
-            </p>
-
-            <p>
-                I enjoy combining technical knowledge with problem-solving to improve
-                processes and deliver reliable technology solutions. My professional
-                interests include cloud computing, DevOps, systems administration,
-                automation, and solutions architecture.
-            </p>
-
-        </div>
-
-        <h2>Education</h2>
-        <p class="section-text">
-            <strong>Bachelor of Science in Information Technology</strong><br>
-            Brigham Young University–Hawaii<br>
-            GPA: 3.91<br>
-            Minors in Supply Chain Operations and Music
-        </p>
-
-        <h2>Technical Interests</h2>
-
-        <div class="skills">
-            <span class="skill-tag">Software Development</span>
-            <span class="skill-tag">Cloud Computing</span>
-            <span class="skill-tag">AWS</span>
-            <span class="skill-tag">DevOps</span>
-            <span class="skill-tag">System Design</span>
-            <span class="skill-tag">Database Management</span>
-        </div>
-
-        <h2>Currently Learning</h2>
-
-        <div class="skills">
-            <span class="skill-tag">CI/CD Pipelines</span>
-            <span class="skill-tag">Infrastructure Automation</span>
-            <span class="skill-tag">Cloud Deployment</span>
-            <span class="skill-tag">Application Security</span>
-        </div>
-
-    </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

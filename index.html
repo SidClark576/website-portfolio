@@ -4,70 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidney Clark Ordonia | Portfolio</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Sidney Clark Ordonia is a BYU-Hawaii Information Technology student, Student IT Project Manager, and aspiring DevOps Engineer.">
+    <title>Sidney Clark Ordonia | IT Project Manager &amp; Future DevOps Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;family=Outfit:wght@500;700;800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-page="home">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a class="brand" href="index.html" aria-label="Sidney Clark Ordonia home">
+                <span class="brand-mark">SO</span>
+                <span class="brand-text"><span>Sidney Ordonia</span><span>IT Portfolio</span></span>
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html" data-page="home">Home</a></li>
+                <li><a href="about.html" data-page="about">About</a></li>
+                <li><a href="experience.html" data-page="experience">Experience</a></li>
+                <li><a href="projects.html" data-page="projects">Projects</a></li>
+                <li><a href="skills.html" data-page="skills">Skills</a></li>
+                <li><a href="contact.html" data-page="contact">Contact</a></li>
+                <li><a class="nav-resume" href="assets/Sidney_Ordonia_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="experience.html">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <main>
+        <section class="hero">
+            <div class="reveal">
+                <p class="eyebrow">BYU-Hawaii Information Technology</p>
+                <h1><span class="gradient-text">Sidney Clark Ordonia</span><span class="hero-title-small">Information Technology Student | IT Project Manager | Future DevOps Engineer</span></h1>
+                <p class="lead">
+                    I combine hands-on technical support, campus IT project leadership, and a growing cloud foundation to improve systems, document better processes, and help people use technology with confidence.
+                </p>
+                <div class="hero-actions" aria-label="Primary actions">
+                    <a class="button" href="assets/Sidney_Ordonia_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+                    <a class="button secondary" href="projects.html">View Projects</a>
+                    <a class="button ghost" href="contact.html">Contact Me</a>
+                </div>
+            </div>
 
-    <!-- Main Container -->
-    <div class="card">
-
-        <header class="header">
-            <img src="profile_avatar.png" alt="Profile Picture" class="profile-image">
-            <h1 class="name">Sidney Clark Ordonia</h1>
-            <h2 class="role">Information Technology Student</h2>
-        </header>
-
-        <section class="about">
-            <p>
-                Hello! I'm <strong>Sidney Clark Ordonia</strong>, an Information Technology
-                student at Brigham Young University–Hawaii with hands-on experience in
-                IT operations, cloud computing, system administration, and technical support.
-
-                Currently serving as a CSR Technical Consultant and Project Coordinator,
-                I help manage enterprise IT services, device deployments, and ticketing
-                operations while supporting over 1,000 technology assets.
-
-                My goal is to pursue opportunities in DevOps, Cloud Engineering,
-                and Solutions Architecture, where I can design scalable and secure
-                technology solutions that create meaningful impact.
-            </p>
+            <aside class="profile-panel reveal" aria-label="Professional profile snapshot">
+                <div class="profile-frame">
+                    <img src="profile_avatar.png" alt="Portrait of Sidney Clark Ordonia" loading="eager">
+                </div>
+                <div class="quick-stats">
+                    <div class="stat"><strong>3.91</strong><span>Cumulative GPA</span></div>
+                    <div class="stat"><strong>1,000+</strong><span>Supported assets</span></div>
+                    <div class="stat"><strong>ITSM</strong><span>TeamDynamix focus</span></div>
+                    <div class="stat"><strong>AWS</strong><span>Cloud interests</span></div>
+                </div>
+            </aside>
         </section>
 
-        <section class="skills">
+        <section class="section compact">
+            <div class="section-heading reveal">
+                <div>
+                    <p class="eyebrow">Professional Positioning</p>
+                    <h2>Ready for technical internships and early-career IT roles.</h2>
+                </div>
+                <p>I am building toward DevOps and Solutions Architecture by strengthening the foundations that matter: support operations, systems administration, documentation, automation, cloud concepts, and project communication.</p>
+            </div>
 
-            <span class="skill-tag">AWS</span>
-            <span class="skill-tag">Microsoft Intune</span>
-            <span class="skill-tag">DevOps</span>
-            <span class="skill-tag">ITSM</span>
-            <span class="skill-tag">Cloud Computing</span>
-            <span class="skill-tag">System Administration</span>
-            <span class="skill-tag">Project Management</span>
-            <span class="skill-tag">Inventory Management</span>
-
+            <div class="grid three">
+                <article class="feature-card reveal">
+                    <span class="icon">IT</span>
+                    <h3>IT Support & Service Delivery</h3>
+                    <p>Experienced with campus technology support, ticket workflows, hardware troubleshooting, software deployment, and clear end-user communication.</p>
+                </article>
+                <article class="feature-card reveal">
+                    <span class="icon">PM</span>
+                    <h3>Project Management</h3>
+                    <p>Led improvement work around TeamDynamix, service portal optimization, research, documentation, and stakeholder coordination.</p>
+                </article>
+                <article class="feature-card reveal">
+                    <span class="icon">CD</span>
+                    <h3>Cloud & DevOps Direction</h3>
+                    <p>Focused on AWS concepts, infrastructure thinking, reliable systems, process automation, and secure technology operations.</p>
+                </article>
+            </div>
         </section>
 
-        <div class="buttons">
-            <a href="projects.html" class="button">View Projects</a>
-            <a href="contact.html" class="button secondary">Contact Me</a>
-            <a href="Sidney_Ordonia_Resume.pdf" class="button secondary" target="_blank">Download Resume</a>
-        </div>
+        <section class="section">
+            <div class="resume-preview reveal">
+                <div>
+                    <p class="eyebrow">Recruiter Snapshot</p>
+                    <h2>Professional highlights</h2>
+                    <ul class="achievement-list">
+                        <li>Student IT Project Manager supporting campus IT improvement initiatives.</li>
+                        <li>Former Technical Consultant with device support, troubleshooting, inventory, and classroom technology exposure.</li>
+                        <li>Information Technology major with Supply Chain Operations and Music minors.</li>
+                        <li>Seeking internships in IT support, cloud operations, DevOps, systems administration, and solutions architecture.</li>
+                    </ul>
+                    <div class="button-row">
+                        <a class="button" href="assets/Sidney_Ordonia_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+                        <a class="button secondary" href="experience.html">Review Experience</a>
+                    </div>
+                </div>
+                <div class="resume-sheet" aria-hidden="true">
+                    <h3>Sidney Clark Ordonia</h3>
+                    <div class="resume-line short"></div>
+                    <div class="resume-line"></div>
+                    <div class="resume-line"></div>
+                    <div class="resume-line short"></div>
+                    <br>
+                    <div class="resume-line"></div>
+                    <div class="resume-line"></div>
+                    <div class="resume-line short"></div>
+                    <br>
+                    <div class="resume-line"></div>
+                    <div class="resume-line short"></div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    </div>
+    <footer class="site-footer">
+        <p>&copy; 2026 Sidney Clark Ordonia</p>
+        <p><a href="mailto:sidneyordonia@gmail.com">sidneyordonia@gmail.com</a></p>
+    </footer>
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>

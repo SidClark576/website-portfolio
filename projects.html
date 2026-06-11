@@ -4,57 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <meta name="description" content="IT, cloud, systems administration, and project management projects by Sidney Clark Ordonia.">
+    <title>Projects | Sidney Clark Ordonia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;family=Outfit:wght@500;700;800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="experience.html">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-    <div class="card">
-        <h1>Projects</h1>
-
-        <div class="project">
-
-            <h2>Inventory Management System</h2>
-
-            <p>
-                Designed and developed a cloud-based inventory management solution
-                using AWS Lambda, API Gateway, DynamoDB, S3, and SNS.
-            </p>
-
-            <ul>
-                <li>Serverless architecture</li>
-                <li>RESTful API development</li>
-                <li>DynamoDB database design</li>
-                <li>IAM least-privilege security model</li>
-                <li>Encrypted cloud storage</li>
+<body data-page="projects">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a class="brand" href="index.html"><span class="brand-mark">SO</span><span class="brand-text"><span>Sidney Ordonia</span><span>IT Portfolio</span></span></a>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+            <ul class="nav-links">
+                <li><a href="index.html" data-page="home">Home</a></li>
+                <li><a href="about.html" data-page="about">About</a></li>
+                <li><a href="experience.html" data-page="experience">Experience</a></li>
+                <li><a href="projects.html" data-page="projects">Projects</a></li>
+                <li><a href="skills.html" data-page="skills">Skills</a></li>
+                <li><a href="contact.html" data-page="contact">Contact</a></li>
+                <li><a class="nav-resume" href="assets/Sidney_Ordonia_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
             </ul>
+        </nav>
+    </header>
 
-        </div>
+    <main>
+        <section class="page-hero reveal">
+            <p class="eyebrow">Projects</p>
+            <h1>Practical IT projects with service, systems, and cloud relevance.</h1>
+            <p class="lead">These projects are positioned as recruiter-friendly case studies. Add GitHub or demo URLs when each artifact is ready; the structure is already set up for both.</p>
+        </section>
 
-        <div class="project">
-            <h2>Portfolio Website</h2>
-            <p>
-                Personal portfolio website showcasing skills, projects, and professional goals.
-            </p>
-        </div>
+        <section class="section compact">
+            <div class="grid three">
+                <article class="project-card reveal">
+                    <span class="icon">TD</span>
+                    <h3>TeamDynamix Optimization Project</h3>
+                    <p>Improved IT service portal structure and request workflows to make campus support easier to access, manage, and document.</p>
+                    <ul class="achievement-list">
+                        <li>Mapped service categories and common request paths.</li>
+                        <li>Improved documentation for repeatable support work.</li>
+                        <li>Aligned portal changes with department needs.</li>
+                    </ul>
+                    <ul class="tag-list"><li>TeamDynamix</li><li>ITSM</li><li>Documentation</li></ul>
+                    <div class="button-row">
+                        <span class="button ghost">GitHub Coming Soon</span>
+                        <a class="button secondary" href="contact.html">Discuss Project</a>
+                    </div>
+                </article>
 
-        <div class="project">
-            <h2>Cloud Deployment Project</h2>
-            <p>
-                Deployed a web application using AWS services and CI/CD practices.
-            </p>
-        </div>
-    </div>
+                <article class="project-card reveal">
+                    <span class="icon">BY</span>
+                    <h3>BYOD Research & Analytics Project</h3>
+                    <p>Student technology research initiative exploring device usage, support needs, and potential improvements to campus IT services.</p>
+                    <ul class="achievement-list">
+                        <li>Collected student-focused technology feedback.</li>
+                        <li>Identified recurring pain points and service gaps.</li>
+                        <li>Translated findings into support recommendations.</li>
+                    </ul>
+                    <ul class="tag-list"><li>Research</li><li>Analytics</li><li>Service design</li></ul>
+                    <div class="button-row">
+                        <span class="button ghost">GitHub Coming Soon</span>
+                        <a class="button secondary" href="contact.html">Discuss Project</a>
+                    </div>
+                </article>
 
+                <article class="project-card reveal">
+                    <span class="icon">RC</span>
+                    <h3>RingCentral Migration Project</h3>
+                    <p>Supported planning and change management for communications modernization through RingCentral-related workflows.</p>
+                    <ul class="achievement-list">
+                        <li>Assisted with communication, documentation, and support readiness.</li>
+                        <li>Helped users adapt to updated collaboration tools.</li>
+                        <li>Connected technical rollout needs with user questions.</li>
+                    </ul>
+                    <ul class="tag-list"><li>RingCentral</li><li>Change support</li><li>Training</li></ul>
+                    <div class="button-row">
+                        <span class="button ghost">GitHub Coming Soon</span>
+                        <a class="button secondary" href="contact.html">Discuss Project</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <span class="icon">WD</span>
+                    <h3>Windows Deployment Automation</h3>
+                    <p>Concept and practice project for standardizing Windows setup, software deployment, and repeatable endpoint preparation.</p>
+                    <ul class="achievement-list">
+                        <li>Focused on reducing manual setup steps.</li>
+                        <li>Designed around repeatable checklists and configuration standards.</li>
+                        <li>Connects desktop support with systems administration habits.</li>
+                    </ul>
+                    <ul class="tag-list"><li>Windows</li><li>Intune concepts</li><li>Automation</li></ul>
+                    <div class="button-row">
+                        <span class="button ghost">GitHub Coming Soon</span>
+                        <a class="button secondary" href="contact.html">Discuss Project</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <span class="icon">AWS</span>
+                    <h3>AWS Cloud Inventory System</h3>
+                    <p>Serverless inventory management concept using AWS services to model secure, scalable, event-driven infrastructure.</p>
+                    <ul class="achievement-list">
+                        <li>Designed around Lambda, API Gateway, DynamoDB, S3, SNS, and IAM.</li>
+                        <li>Practiced least-privilege security and REST API design.</li>
+                        <li>Explored durable storage, notifications, and cloud architecture tradeoffs.</li>
+                    </ul>
+                    <ul class="tag-list"><li>AWS Lambda</li><li>DynamoDB</li><li>IAM</li></ul>
+                    <div class="button-row">
+                        <span class="button ghost">GitHub Coming Soon</span>
+                        <a class="button secondary" href="contact.html">Discuss Project</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <span class="icon">LAB</span>
+                    <h3>Home Lab & Virtualization</h3>
+                    <p>Personal lab direction for learning Linux, Windows administration, networking, virtualization, and deployment workflows.</p>
+                    <ul class="achievement-list">
+                        <li>Practices troubleshooting across operating systems and network scenarios.</li>
+                        <li>Builds confidence with infrastructure concepts outside the classroom.</li>
+                        <li>Supports long-term DevOps and solutions architecture goals.</li>
+                    </ul>
+                    <ul class="tag-list"><li>Linux</li><li>Virtualization</li><li>Networking</li></ul>
+                    <div class="button-row">
+                        <span class="button ghost">GitHub Coming Soon</span>
+                        <a class="button secondary" href="contact.html">Discuss Project</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Sidney Clark Ordonia</p>
+        <p><a href="skills.html">Review technical skills</a></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
