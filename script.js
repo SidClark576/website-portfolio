@@ -46,11 +46,32 @@ document.querySelector("#contact-form")?.addEventListener("submit", (event) => {
     event.preventDefault();
 
     const form = event.currentTarget;
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const message = form.message.value.trim();
-    const subject = encodeURIComponent(`Portfolio inquiry from ${name || "a recruiter"}`);
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalText = submitButton.textContent;
 
-    window.location.href = `mailto:sidneyordonia@gmail.com?subject=${subject}&body=${body}`;
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending...";
+
+    const formData = new FormData(form);
+
+    fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+    })
+    .then((response) => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        form.style.display = "none";
+        document.querySelector("#form-success").style.display = "block";
+        const note = document.querySelector(".form-note");
+        if (note) note.style.display = "none";
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        document.querySelector("#form-error").style.display = "block";
+        submitButton.disabled = false;
+        submitButton.textContent = originalText;
+    });
 });

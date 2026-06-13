@@ -66,8 +66,11 @@
 
             <section class="contact-card reveal" aria-labelledby="contact-form-title">
                 <h2 id="contact-form-title">Send a message</h2>
-                <p class="form-note">This form opens your email app with a prepared message, so it works without a server.</p>
-                <form id="contact-form">
+                <p class="form-note">Send a message directly to my inbox.</p>
+                <form id="contact-form" name="contact" data-netlify="true" netlify-honeypot="bot-field">
+                    <p class="hidden" style="display: none;">
+                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
                     <label for="name">Name
                         <input id="name" name="name" type="text" autocomplete="name" required>
                     </label>
@@ -79,6 +82,14 @@
                     </label>
                     <button class="button" type="submit">Send Message</button>
                 </form>
+                <div id="form-success" class="form-message success" style="display: none;">
+                    <h3>Message Sent!</h3>
+                    <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+                </div>
+                <div id="form-error" class="form-message error" style="display: none;">
+                    <h3>Oops!</h3>
+                    <p>Something went wrong submitting the form. Please try again or email me directly.</p>
+                </div>
             </section>
         </section>
     </main>
